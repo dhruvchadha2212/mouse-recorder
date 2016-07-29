@@ -1,0 +1,55 @@
+body {
+	position: relative;
+	margin: 0;
+}
+#start, #stop {
+	position: absolute;
+	border: 1px solid black;
+	border-radius: 10px;
+	width: 80px;
+	height: 30px;
+	transition: background-color 0.5s;
+	text-align: center;
+}
+div p {
+	margin: 0;
+	padding-top: 6px;
+}
+#start:hover, #stop:hover {
+	background-color: cyan;
+	cursor: pointer;
+}
+#start {
+	top: 300px;
+	left: 200px;
+}
+#stop {
+	top: 300px;
+	left: 1000px;
+}
+#pointer {
+	display: none;
+	width: 14px;
+	position: absolute;
+	padding: 0;
+	margin: 0;
+}
+#pointer img {
+	width: 100%;
+}
+#title {
+	font-size: 40px;
+	text-align: center;
+}
+#instructions {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 20px;
+	overflow: hidden;
+	margin: 10px;
+	border: 1px dotted black;
+}
+#instructions:hover {
+	height: 350px;
+}
